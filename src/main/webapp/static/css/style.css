@@ -1,0 +1,73 @@
+.booked, td {
+    background-color: #fcff23;
+}
+.notBooked, td {
+    background-color: #ffffff;
+}
+
+table, td, tr{
+    border: 1px solid;
+    text-align:center;
+    border-spacing: 0px;
+    height: 55px;
+}
+
+#btn1{
+    width: 15%;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0em;
+}
+
+#btn2{
+    width: 90%;
+}
+
+#btn3{
+    width: 15%;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0em;
+}
+
+td{
+    width: 12.5%;
+    border-color: #909090;
+}
+
+#navbar{
+    border-radius: 0em;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+    width: auto;
+    max-width: 85%;
+    padding: 0 15px;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
