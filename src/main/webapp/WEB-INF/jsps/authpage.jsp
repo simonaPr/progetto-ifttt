@@ -13,25 +13,25 @@
     </style>
 
    
-    <script src="/static/js/libs/lodash.js"></script>
-    <script src="/static/js/libs/jquery.js"></script>
-    <script src="/static/js/libs/jquery-ui.js"></script>
+    <script src="./static/js/libs/lodash.js"></script>
+    <script src="./static/js/libs/jquery.js"></script>
+    <script src="./static/js/libs/jquery-ui.js"></script>
 
-    <script src="/static/js/libs/bootstrap.js"></script>
-    <script src="/static/js/libs/moment.js"></script>
-    <script src="/static/js/libs/moment-range.js"></script>
-    <script src="/static/js/libs/angular.js"></script>
-    <script src="/static/js/libs/angular-route.js"></script>
+    <script src="./static/js/libs/bootstrap.js"></script>
+    <script src="./static/js/libs/moment.js"></script>
+    <script src="./static/js/libs/moment-range.js"></script>
+    <script src="./static/js/libs/angular.js"></script>
+    <script src="./static/js/libs/angular-route.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/jquery-ui.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css">
+    <link rel="stylesheet" href="./static/css/jquery-ui.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/animate.css">
 
 </head>
 <body>
-${msg}
+
 <nav id="navbar" class="navbar navbar-default" role="navigation" >
     <div class="navbar-header">
         <button type="button" class="navbar-toggle"
@@ -47,15 +47,17 @@ ${msg}
             <li><a href="https://www.google.it">Google (example)</a></li>
             <li><a href="https://twitter.com">Twitter (example)</a></li>
         </ul>
-        <form class="navbar-form navbar-right" method="POST">
+        <form class="navbar-form navbar-right" role="search" method="POST">
             <input name="username" type="text" class="form-control"
                    placeholder="Username">
             <input name="password" type="password" class="form-control"
                    placeholder="Password">
-            <button type="submit" />
+            <input type="submit" class="form-control btn btn-primary">
         </form>
     </div>
 </nav>
+
+<h2>${msg}</h2>
 
 <div id="lipsum" class="container fadeIn animated">
     <div class="row">
