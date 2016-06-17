@@ -112,7 +112,7 @@ public class LoginManagerImpl implements LoginManager {
 					message.setSubject("New Registration");
 					message.setText(
 							"Dear " + username + "," + "\n\n To complete the registration please follow the link: \n"
-									+ "http://localhost:8080/progetto/activation.html?id=" + id + "&url=" + url);
+									+ "http://localhost:8080/progetto/api/activation.html?id=" + id + "&url=" + url);
 
 					Transport.send(message);
 

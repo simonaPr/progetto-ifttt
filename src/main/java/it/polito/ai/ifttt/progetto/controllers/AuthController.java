@@ -40,7 +40,7 @@ public class AuthController {
 			attributes.addFlashAttribute("msg", "Some Errors (database)");
 		}
 	
-		return "redirect:/authpage.html";
+		return "redirect:/api/authpage.html";
 	}
 	
 	@RequestMapping(value="registration", method=RequestMethod.GET)
@@ -77,7 +77,7 @@ public class AuthController {
 			attributes.addFlashAttribute("msg", "Some errors");
 		}
 		
-		return "redirect:/registration.html";
+		return "redirect:/api/registration.html";
 	}	
 	
 	@RequestMapping(value="activation", method=RequestMethod.GET)
@@ -99,7 +99,7 @@ public class AuthController {
 			else if (code==1){
 				attributes.addFlashAttribute("msg", "User already Registered");				
 			}
-			return "redirect:/authpage.html";
+			return "redirect:/api/authpage.html";
 	//	}	
 	}	
 }
